@@ -1,0 +1,42 @@
+I, [2019-03-11T11:02:22.225907 #35501]  INFO -- : Cleared interactions
+I, [2019-03-11T11:02:22.246924 #35501]  INFO -- : Registered expected interaction GET /foo
+D, [2019-03-11T11:02:22.247486 #35501] DEBUG -- : {
+  "description": "foo",
+  "request": {
+    "method": "GET",
+    "path": "/foo"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "message": "Hello world"
+    }
+  }
+}
+I, [2019-03-11T11:02:22.266146 #35501]  INFO -- : Received request GET /foo
+D, [2019-03-11T11:02:22.266474 #35501] DEBUG -- : {
+  "path": "/foo",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Host": "localhost:1234",
+    "User-Agent": "curl/7.54.0",
+    "Accept": "*/*",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2019-03-11T11:02:22.266855 #35501]  INFO -- : Found matching response for GET /foo
+D, [2019-03-11T11:02:22.267178 #35501] DEBUG -- : {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "message": "Hello world"
+  }
+}
+I, [2019-03-11T11:02:22.288487 #35501]  INFO -- : Verifying - interactions matched
+I, [2019-03-11T11:02:22.309024 #35501]  INFO -- : Writing pact for Bar to ./pacts/foo-bar.json

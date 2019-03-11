@@ -11,6 +11,11 @@
     },
     "body": {
       "message": "Hello world"
+    },
+    "matchingRules": {
+      "$.body.data[*].message": {
+        "match": "type"
+      }
     }
   }
 }
